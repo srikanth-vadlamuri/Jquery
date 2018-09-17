@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Basics</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body >
+    <h1>Jquery Basics</h1>
+    <!--
+    $(selector).action()
+    -->
+
+    <p>this is my para1</p>
+    <p>this is my para2</p>
+    <p>this is my para3</p>
+    <p class="para4">this is my para4</p>
+     <ul>
+         <li>one</li>
+         <li>two</li>
+         <li>three</li>
+         <li>four</li>
+     </ul>
+
+    <button>click</button>
+   
+<script>
+     $(document).ready(function(){
+         console.log("hello DOM ready")
+
+         $("button").click(function(){
+             $("ul li:first").toggle()
+         })
+     });
+
+
+</script>
+
+</body>
+</html>
